@@ -1,0 +1,64 @@
+
+public class AllExceptions {
+	
+	public static void main (String [] args)
+	{
+		arthiexp(4,0);
+		arrexp(4);
+		numformart("4");
+		stIndex("Abebe");
+		nullpointer("");
+	}
+	
+	
+	public static void arthiexp(int a, int b) {
+		
+		try {
+			System.out.println(a/b);
+		} catch(ArithmeticException e) {
+			System.out.println("Number cant be devided by zero");
+		}
+		
+	}
+	
+public static void arrexp(int i ) {
+		
+		try {
+			System.out.println(i);
+		} catch(ArrayIndexOutOfBoundsException e1) {
+			System.out.println("array out of bound");
+		
+}
+}
+
+public static void numformart(String st) {
+	
+	try {
+		System.out.println(st);
+	} catch(NumberFormatException e2) {
+		System.out.println("Please Enter a number");
+	
+}
+}
+
+public static void stIndex(String st2) {
+	
+	try {
+		System.out.println(st2.substring(0, 15));
+	} catch(StringIndexOutOfBoundsException e3) {
+		System.out.println("string out of index");
+	
+}
+}
+
+public static void nullpointer(String st3) {
+	
+	try {
+		System.out.println(st3);
+	} catch(NullPointerException e2) {
+		System.out.println("null value");
+	
+}
+}
+
+}

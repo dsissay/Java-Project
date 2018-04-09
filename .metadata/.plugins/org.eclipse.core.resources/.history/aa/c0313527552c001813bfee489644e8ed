@@ -1,0 +1,19 @@
+package com.collaborait.demo;
+
+public class JavaDataTypes {
+	
+	public static void  main (String[] args) {
+		boolean myboolean=false;
+		byte mybyte=124;
+		char mychar= 'c';
+		short myshort= 2345;
+		int myint=4598998;
+m.out.println(" Hello World");
+	 System.out.println(mybyte);
+	 System.out.println(mychar);
+	 System.out.println(myshort);
+	 System.out.println(myint);
+	 System.out.println(myboolean);
+}
+	
+}

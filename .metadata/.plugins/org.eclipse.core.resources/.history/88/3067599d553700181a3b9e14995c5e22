@@ -1,0 +1,11 @@
+package com.JavaIO.demo;
+import java.io.*;
+
+public class FileReader {
+	
+	 
+}  
+	
+	
+	
+

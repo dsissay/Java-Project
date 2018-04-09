@@ -1,0 +1,33 @@
+package com.collaborait.demo;
+
+public class JavaDataTypes {
+	
+	public static void  main (String[] args) {
+		/*boolean myboolean=false;
+		String mystring ="This is java Programming";
+		byte mybyte=124;
+		char mychar= 'c';
+		short myshort= 2345;
+		int myint=4598998;
+		float myfloat=10.47f;
+		double mydouble=7890.67;
+		System.out.println("hello World");
+	 System.out.println(mybyte);
+	 System.out.println(mychar);
+	 System.out.println(myshort);
+	 System.out.println(myint);
+	 System.out.println(myboolean);
+	 System.out.println(myfloat);
+	 System.out.println(mydouble);
+	 System.out.println(mystring);
+	 
+	 */
+	 
+	 int num1=34;
+	 int num2=35;
+	 
+	 System.out.println("My first Number is "+ " "+ num1 +" " + "and" + " "+ "My second Number " + " " + num2);
+	 
+}
+	
+}

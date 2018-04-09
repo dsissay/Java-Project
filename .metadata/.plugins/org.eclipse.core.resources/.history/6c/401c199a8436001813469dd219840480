@@ -1,0 +1,26 @@
+package com.MethodExercise.demo;
+
+public class ExpethionHandling {
+/*
+ * two types of exceptions in java
+ * Checked Exception
+ * Unchecked Exception
+ * 
+ */
+	public static void main (String [] args)
+	{
+		
+		try{
+			int a;
+			int b;
+			int c= a/b;
+		
+		}
+		catch (ArithmeticException e){
+			System.out.println("a number cant devided by zero");
+			
+		}
+	}
+	
+	
+}

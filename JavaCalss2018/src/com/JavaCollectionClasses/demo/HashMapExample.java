@@ -1,0 +1,89 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
+
+public class HashMapExample {
+
+	public static void main (String[] args) {
+		
+		myHashMap();
+		//myHashMap2(); 
+	}
+
+	public static void myHashMap() {
+		HashMap <Integer, String> hmap=new HashMap<Integer,String>();
+		
+		//hash map uses a comparator
+		hmap.put(3,"VA");
+		hmap.put(53,"AA");
+		hmap.put(4,"Gojam");
+		hmap.put(33,"Dessie");
+		
+//		System.out.println(hmap);
+//		System.out.println(hmap.get(3));	
+//		System.out.println(hmap.size());
+//		System.out.println(hmap.isEmpty());
+//		System.out.println(hmap.containsKey(33));
+//		System.out.println(hmap.containsValue("VA"));
+//		System.out.println(hmap.remove(33));
+		
+		// Setting an iterator
+		
+		
+		Set<Entry<Integer, String>> st=hmap.entrySet();
+		
+		Iterator<Entry<Integer, String>> it=st.iterator();
+		 System.out.println("Unsorted Map:");
+		while (it.hasNext()) {
+			Map.Entry en= it.next();
+			System.out.print(en.getKey()+":");
+			System.out.println(en.getValue());	
+			
+			
+		}
+		
+		//this is how to preserve the order of hash map
+		 Map<Integer, String> map = new TreeMap<Integer, String>(hmap); 
+         System.out.println("Preserve The Value:");
+         Set set2 = map.entrySet();
+         Iterator iterator2 = set2.iterator();
+         while(iterator2.hasNext()) {
+              Map.Entry me2 = (Map.Entry)iterator2.next();
+              System.out.print(me2.getKey() + ": ");
+              System.out.println(me2.getValue());
+         }
+		
+	}
+	
+	public static void myHashMap2() {	
+		
+		HashMap <String, Float> hmap2=new HashMap<String,Float>();
+		
+		hmap2.put("Daniel", 1.0f);
+		hmap2.put("Beyene", 2.0f);
+		hmap2.put("Sissay", 3.0f);
+		System.out.println(hmap2);
+		
+		HashMap <String, String> hmap3=new HashMap<String,String>();
+		hmap3.put("Ethiopia", "Addis Ababa");
+		hmap3.put("USA", "DC");
+		hmap3.put("Canada", "Ontario");
+		System.out.println(hmap3);
+		
+		System.out.println(hmap3.get("USA"));	
+		System.out.println(hmap3.size());
+		System.out.println(hmap3.isEmpty());
+		System.out.println(hmap3.containsKey("USA"));
+		System.out.println(hmap3.containsValue("Ethiopia"));
+		System.out.println(hmap3.remove("Canada"));
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,24 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.LinkedHashSet;
+import java.util.Vector;
+
+public class lkndHashSet {
+
+	public static void main (String[] args ) {
+
+		lkndHash ();
+	}
+
+	public static void lkndHash () {
+		
+		LinkedHashSet <String> vc=new LinkedHashSet<>();
+		vc.add("Daniel");
+		vc.add("Abebe");
+		vc.add("Kebede");
+		
+	System.out.println(vc);
+		
+	}
+	
+}

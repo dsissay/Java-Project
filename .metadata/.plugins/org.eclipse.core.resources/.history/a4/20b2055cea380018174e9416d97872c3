@@ -1,0 +1,8 @@
+package com.JavaCollectionClasses.demo;
+
+public class HashSet {
+	
+	//Hash set doesn't  Mainatain order
+	//tree set maintains order
+
+}

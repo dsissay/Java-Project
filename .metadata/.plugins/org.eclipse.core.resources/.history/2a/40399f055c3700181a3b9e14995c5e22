@@ -1,0 +1,31 @@
+package com.JavaIO.demo;
+import java.io.*;
+
+public class FileReader {
+
+File file= new File("C:\\Users\\Daniel\\Desktop\\myFile.txt");
+BufferedInputStream br;
+FileInputStream fi;
+
+
+public FileReader() {
+	// TODO Auto-generated constructor stub
+}
+
+
+public void myFileReader () throws IOException
+{
+	try {
+		fi=new FileInputStream ("C:\\Users\\Daniel\\Desktop\\myFile.txt");
+		br=new BufferedInputStream (br);
+		while (br.available()>0) {
+			System.out.println((char)br.read());
+		}
+	}catch (FileNotFoundException e1) {
+		System.out.println("File Not Found");
+		e1.printStackTrace();
+	}
+		
+	}
+}
+

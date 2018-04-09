@@ -1,0 +1,31 @@
+
+public class MyownException2 extends Exception {
+	
+	
+	public static void main (String [] args)
+	{
+		
+		
+		try {
+			System.out.println("Starting of Try");
+			throw new MyException("This is an error");
+			
+		} catch (MyException exp) {
+			System.out.println("Starting of Try");
+			
+		//	System.out.println(exp);
+		}
+	
+	
+	int a;
+	int b;
+	
+	public MyownException2 (int a) {
+		a=5;
+	}
+	
+	public int  Tryit () {
+		return b;
+	}
+
+}

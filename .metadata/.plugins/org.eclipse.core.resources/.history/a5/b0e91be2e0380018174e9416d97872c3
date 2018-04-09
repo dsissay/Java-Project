@@ -1,0 +1,42 @@
+package com.JavaCollectionClasses.demo;
+import java.util.LinkedList;
+import java.util.ArrayList;
+
+public class LinkedListExample {
+	
+	public static void main (String[] args ) {
+		LinkedList();
+		
+	}
+	
+	public static void LinkedList() {
+		
+		LinkedList <String> lk = new LinkedList<>();
+		
+		lk.add("Dc");
+		lk.add("Gojam");
+		lk.add("Addis Ababa");
+		 System.out.println("List of city"+ lk);
+		 lk.addFirst("Chicago");
+		 lk.addLast("Vegas");
+		 
+		 System.out.println("After Adding City "+ lk);
+	  Object firstvar=lk.get(0);
+	    Object thirdvar= lk.get(3);
+
+	System.out.println(firstvar +" "+ thirdvar);
+		
+	lk.set(0,"AAA");
+	lk.set(3,"Ethiop");
+	
+	
+	ArrayList <String> arrlist= new ArrayList <String> ();
+	arrlist.add("Gonder");
+	arrlist.add("DireDe");
+	
+	lk.addAll(arrlist);
+	
+	System.out.println(lk);
+	
+	}
+}

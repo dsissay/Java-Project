@@ -1,0 +1,13 @@
+package com.JavaIO.demo;
+import java.io.*;
+
+public class WriteContentOnFile{
+	{
+	try{    
+        FileWriter fw=new FileWriter("C:\\Users\\Daniel\\Desktop\\myFile.txt");    
+        fw.write("Welcome to javaTpoint.");    
+        fw.close();    
+       }catch(Exception e){System.out.println(e);}    
+       System.out.println("Success...");    
+}
+}

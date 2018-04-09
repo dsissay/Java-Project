@@ -1,0 +1,18 @@
+package com.collaborait.demo;
+
+public class ExerciseElseIf {
+	public static void main(String[] args) {
+		
+		int x=34;
+		if (x > 0) {
+			System.out.print("It is a postive number");
+		} else if (x <0) {
+			System.out.print("IT is a Negative");
+		} else {
+			System.out.print("The Number is Zero");
+		}
+				
+		
+	}
+
+}

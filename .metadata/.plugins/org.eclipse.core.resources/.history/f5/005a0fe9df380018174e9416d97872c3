@@ -1,0 +1,32 @@
+package com.JavaCollectionClasses.demo;
+
+/*
+ * Collection  interface
+ * =============
+ * List 
+ * -	Arreylist
+ *  - Linkedset
+ * -  Vector
+ * Set 
+ * 	-Hashset
+ * 	-LinkedHashset
+ * 	-Treeset
+ * Quebe
+ * 	-LinkedList
+ * 	-PriorityQuene
+ * 
+ * Map Interface
+ * ==============
+ * HashTable
+ * LinkedHashMap
+ * HashMap
+ * TreeMap
+ */
+
+import java.util.AbstractList;
+
+public class ArrayList {
+	
+	
+	
+}

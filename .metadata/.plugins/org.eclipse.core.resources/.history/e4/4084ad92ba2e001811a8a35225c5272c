@@ -1,0 +1,22 @@
+package com.collaborait.demo;
+
+public class JavaLoops {
+	public static void main(String[] args) {
+		//we have four types of loops in java
+		// simple for loop
+			///	enhanced for each loop
+			////while loop
+			////do while loop
+			////continue statments
+			////break statments
+	
+		
+		
+		int i;
+		for (i=0; i<=10; i++) {
+			System.out.println(i);
+			
+		}
+	}
+
+}

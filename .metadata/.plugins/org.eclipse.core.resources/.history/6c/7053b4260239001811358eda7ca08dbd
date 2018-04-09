@@ -1,0 +1,29 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.Vector;
+
+public class MyVector {
+	
+	public static void main (String[] args ) {
+
+		veCtorExam();
+	}
+
+	public static void veCtorExam () {
+		
+		Vector<String> vc=new Vector<>();
+		vc.add("Daniel");
+		vc.add("Abebe");
+		vc.add("Kebede");
+	
+		System.out.println(vc);
+		
+		System.out.println(vc.size());
+		
+		Vector<String> vc1=new Vector<>(20);
+		//vc1.add("Daniel2");
+		System.out.println(vc1.size());
+		
+	}
+	
+}

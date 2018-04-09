@@ -1,0 +1,52 @@
+package com.JavaIO.demo;
+
+import java.io.*;
+
+public class FileManagment {
+	public static void main (String [] args) throws IOException
+	{
+		 CreateFile fl=new CreateFile();
+		 fl.fileCreated();
+		
+		 fileWritter();
+		 ReadFile();
+	
+	}
+
+	
+
+	public static void fileWritter() {
+		WriteContentOnFile wt= new WriteContentOnFile();
+		wt.fileWritten();
+	}
+	
+	public static void ReadFile() throws IOException {
+		
+//		FileReader fr=new FileReader();
+//		
+//		try{
+//			fr.myFileReader();
+//		}catch (IOException e) {
+//			System.out.println("File is not Found");
+//			e.printStackTrace();
+//		}
+//				
+//	}
+		File file= new File("C:\\Users\\Daniel\\Desktop\\myFile.txt");
+		BufferedInputStream br = null;
+		FileInputStream fi;
+		
+		try {
+			fi=new FileInputStream (file);
+			br=new BufferedInputStream (br);
+			while (br.available()>0) {
+				System.out.println((char)br.read());
+			}
+		}catch (FileNotFoundException e1) {
+			System.out.println("File Not Found");
+			e1.printStackTrace();
+		}
+			
+		}
+}
+

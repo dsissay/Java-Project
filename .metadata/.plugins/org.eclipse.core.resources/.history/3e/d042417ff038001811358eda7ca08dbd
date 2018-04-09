@@ -1,0 +1,23 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.Vector;
+
+public class lkndHashSet {
+
+	public static void main (String[] args ) {
+
+		veCtorExam();
+	}
+
+	public static void veCtorExam () {
+		
+		Vector<String> vc=new Vector<>();
+		vc.add("Daniel");
+		vc.add("Abebe");
+		vc.add("Kebede");
+		
+	System.out.println(vc);
+		
+	}
+	
+}

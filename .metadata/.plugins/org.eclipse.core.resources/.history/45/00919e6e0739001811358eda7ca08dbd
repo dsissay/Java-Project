@@ -1,0 +1,22 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.TreeSet;
+
+public class TreeSetExample {
+	
+	public static void main (String[] args ) {
+
+		myTreeSet ();
+	}
+	
+	
+	public static void myTreeSet() {
+		
+		TreeSet <String> tr=new TreeSet <>();
+		tr.add("IT");
+		tr.add("Geography");
+		tr.add("Math");
+		System.out.println(tr);
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class CreateYourOwnException {
+	public static void main (String [] args)
+	{
+		Eligebility(17,58);
+	}
+	
+	static void Eligebility(int a, int b) {
+		
+	
+	if (a<1 || b<0) {
+		throw new ArithmeticException("Eligeble");
+	}
+	else {
+		System.out.println("Not Eligeble");
+	}
+
+}
+
+	
+}

@@ -1,0 +1,63 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.Enumeration;
+import java.util.Vector;
+
+public class MyVector {
+	
+	public static void main (String[] args ) {
+
+		veCtorExam();
+	}
+
+	public static void veCtorExam () {
+		
+		Vector<String> vc=new Vector<>();
+		vc.add("Daniel");
+		vc.add("Abebe");
+		vc.add("Kebede");
+		
+	
+		//System.out.println(vc);
+		
+		//System.out.println(vc.size());
+		
+		Vector<String> vc1=new Vector<>();
+		
+		
+		vc1.add("Daniel2");
+		//System.out.println(vc1.size());
+		//System.out.println(vc1.lastElement());
+		
+		/*
+		 * this are some of vector elements
+		 * LastelElement()
+		 * isEmpty()
+		 * lastIndexOf(Object elem)
+		 * lastIndexOf(Object elem, int index)
+		 * remove(int index)
+		 * removeAll(Collection c)
+		 * void removeAllElements()
+		 */
+		
+		Vector<Number> v= new Vector<Number> (10,0);
+		
+		 
+		System.out.println("Initial size: " + v.size());
+	      System.out.println("Initial capacity: " + v.capacity());
+		
+	      
+	      v.addElement(new Integer(1));
+	      v.addElement(new Integer(2));
+	      v.addElement(new Integer(3));
+	      v.addElement(new Double(3.5));
+	      v.addElement(new Float(7.0));
+	      
+	      Enumeration<Number> vEnum = v.elements();
+	      System.out.println("\nElements in vector:");
+	      while(vEnum.hasMoreElements())
+	          System.out.print(vEnum.nextElement() + " ");
+	       System.out.println();
+	}
+	
+}

@@ -1,0 +1,18 @@
+package com.JavaIO.demo;
+
+import java.io.IOException;
+
+public class FileManagment {
+	public static void main (String [] args) throws IOException
+	{
+		 fileCreated();
+		
+	}
+
+	private static void fileCreated() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

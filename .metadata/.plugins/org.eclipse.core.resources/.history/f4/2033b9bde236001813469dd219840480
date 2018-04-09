@@ -1,0 +1,32 @@
+package com.JavaIO.demo;
+import java.io.*;
+
+public class SimpleIO {
+	
+	//this is a byte stream example
+	// it coies test form text 1 to text 2
+	
+	public static void main (String [] args) throws IOException
+	{
+		FileInputStream in = null;
+        FileOutputStream out = null;
+
+        try {
+            in = new FileInputStream("C:\\Users\\Daniel\\Desktop\\text1.txt");
+            out = new FileOutputStream("C:\\Users\\Daniel\\Desktop\\text2.txt");
+            int c;
+            System.out.println("Text suscussfuly copied");
+            while ((c = in.read()) != -1) {
+                out.write(c);
+            }
+        } finally {
+            if (in != null) {
+                in.close();
+            }
+            if (out != null) {
+                out.close();
+            }
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+package com.JavaIO.demo;
+import java.io.*;
+
+public class FileReader {
+	
+	public int Reader() {
+
+	try  {  
+        FileReader reader = new FileReader();  
+        FileReader fr = new FileReader();  
+        int i;  
+        while ((i = fr.Reader()) != -1) {  
+            System.out.print((char) i);  
+        }  
+        fr.clone();  
+        reader.clone();  
+    } catch (Exception e) {  
+        e.getMessage();  
+    }  
+	
+	return i;
+	
+}  
+	
+	
+	
+}

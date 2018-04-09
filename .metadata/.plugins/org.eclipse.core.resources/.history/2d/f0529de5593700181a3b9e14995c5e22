@@ -1,0 +1,37 @@
+package com.JavaIO.demo;
+
+import java.io.File;
+import java.io.IOException;
+
+public class FileManagment {
+	public static void main (String [] args) throws IOException
+	{
+		 CreateFile fl=new CreateFile();
+		 fl.fileCreated();
+		
+		 fileWritter();
+		 ReadFile();
+	
+	}
+
+	
+
+	public static void fileWritter() {
+		WriteContentOnFile wt= new WriteContentOnFile();
+		wt.fileWritten();
+	}
+	
+	public static void ReadFile() throws IOException {
+		
+		FileReader fr=new FileReader();
+		
+		try{
+			fr.myFileReader();
+		}catch (IOException e) {
+			System.out.println("THe File is not Found");
+			e.printStackTrace();
+		}
+				
+	}
+}
+

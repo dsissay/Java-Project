@@ -1,0 +1,33 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.*;
+import java.util.Comparator;
+
+public class PriortyLst {
+	
+	public static void main (String[] args) {
+		prtList();
+		
+	}
+
+		public static void prtList() {
+			
+			Comparator<String> cp = new Comparator<String>();
+			PriorityQueue <String> pq= new PriorityQueue(10,cp);
+			
+			pq.add("short");
+	        pq.add("very long indeed");
+	        pq.add("medium");
+	        
+	        System.out.println(pq.remove());
+	        
+	        while (pq.size() != 0)
+	        {
+	            //System.out.println(pq.remove());
+	        }
+			
+		}
+	
+	
+
+}

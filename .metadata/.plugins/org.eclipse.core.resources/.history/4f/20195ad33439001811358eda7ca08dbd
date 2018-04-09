@@ -1,0 +1,13 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.*;
+
+public class PriortyLst {
+	
+	public static void main (String[] args) {
+
+		
+		 
+	}
+
+}

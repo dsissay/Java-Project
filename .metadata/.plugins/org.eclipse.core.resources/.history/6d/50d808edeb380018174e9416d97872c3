@@ -1,0 +1,25 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.HashSet;
+
+public class HashSet {
+	
+	//Hash set doesn't  Mainatain order
+	//tree set maintains order
+
+	public static void main (String[] args ) {
+		myHashSet();
+	}
+	public static void myHashSet() {
+		
+		HashSet <String> hs=new HashSet <> ();
+		hs.add("Addis");
+		hs.add ("Gojam");
+		hs.add("gonder");
+		hs.add(null);
+		hs.add(null);
+		
+		System.out.println(hs);
+		
+	}
+}

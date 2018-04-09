@@ -1,0 +1,32 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.HashMap;
+
+public class HashMapExample {
+
+	public static void main (String[] args) {
+		myHashMap();
+		
+	}
+
+	
+	
+	public static void myHashMap() {
+		HashMap <Integer, String> hmap=new HashMap<Integer,String>();
+		
+		hmap.put(3,"VA");
+		hmap.put(3,"AA");
+		hmap.put(4,"Gojam");
+		hmap.put(33,"Dessie");
+		
+		
+		System.out.println(hmap.get(3));	
+		System.out.println(hmap.size());
+		System.out.println(hmap.isEmpty());
+		System.out.println(hmap.containsKey(33));
+		System.out.println(hmap.containsValue("VA"));
+		System.out.println(hmap.remove(33));
+		System.out.println(hmap.get(33));
+		
+	}
+}

@@ -1,0 +1,29 @@
+
+public class AllExceptions {
+	
+	public static void main (String [] args)
+	{
+		arthiexp(4,0);
+	}
+	
+	
+	public static void arthiexp(int a, int b) {
+		
+		try {
+			System.out.println(a/b);
+		} catch(ArithmeticException e) {
+			System.out.println("Number cant be devided by zero");
+		}
+		
+	}
+	
+public static void arrexp(int j) {
+		
+		try {
+			System.out.println(j);
+		} catch(ArrayIndexOutOfBoundsException e1) {
+			System.out.println("array out of bound");
+		
+}
+}
+}

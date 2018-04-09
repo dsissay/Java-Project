@@ -1,0 +1,46 @@
+package com.JavaCollectionClasses.demo;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class HashMapExample {
+
+	public static void main (String[] args) {
+		myHashMap();
+		
+	}
+
+	
+	
+	public static void myHashMap() {
+		HashMap <Integer, String> hmap=new HashMap<Integer,String>();
+		
+		hmap.put(3,"VA");
+		hmap.put(3,"AA");
+		hmap.put(4,"Gojam");
+		hmap.put(33,"Dessie");
+		
+		
+		System.out.println(hmap.get(3));	
+		System.out.println(hmap.size());
+		System.out.println(hmap.isEmpty());
+		System.out.println(hmap.containsKey(33));
+		System.out.println(hmap.containsValue("VA"));
+		System.out.println(hmap.remove(33));
+		
+		Set<Entry<Integer, String>> st=hmap.entrySet();
+		Iterator it=st.iterator();
+		
+		while (it.hasNext()) {
+			Map.Entry en= (Map.Entry) it.next();
+			System.out.println("key is"+ en.getKey()+ "Value is");
+			System.out.println(en.getValue());
+			
+		}
+		
+		
+	}
+}

@@ -1,0 +1,35 @@
+package com.JavaIO.demo;
+import java.io.*;
+
+public class FileReader {
+	
+	 public FileReader(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	 
+	 public void myFileReader() {
+	FileReader fr=new FileReader("C:\\Users\\Daniel\\Desktop\\myFile.txt");    
+	
+	 int i;    
+     while((i=fr.read())!=-1)    
+     System.out.print((char)i);    
+     fr.close();    
+	 }
+
+
+	private void close() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	private int read() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}  
+	
+	
+	
+
